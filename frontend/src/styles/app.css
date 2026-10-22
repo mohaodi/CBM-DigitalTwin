@@ -1,0 +1,36 @@
+* { box-sizing: border-box; }
+html, body, #root, #root > .ant-app { width: 100%; height: 100%; margin: 0; }
+body { font-family: "Microsoft YaHei", "PingFang SC", system-ui, sans-serif; background: #061522; }
+button, input { font: inherit; }
+* { scrollbar-width: thin; scrollbar-color: #31566d transparent; }
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-thumb { background: #31566d; border-radius: 8px; }
+.app-shell { height: 100dvh; overflow: hidden; background: #061522; }
+.app-sidebar.ant-layout-sider { background: #081c2c; border-right: 1px solid #173649; }
+.app-sidebar .ant-layout-sider-children { display: flex; flex-direction: column; }
+.app-brand { padding: 24px 16px 22px; }
+.brand-mark { display: inline-flex; color: #79d4fa; font-size: 25px; margin-bottom: 12px; }
+.brand-subtitle { color: #7595aa; font-size: 11px; margin-top: 8px; }
+.app-sidebar .ant-menu { padding: 0 8px; flex: 1; }
+.app-sidebar .ant-menu-item { margin: 4px 0 8px; width: 100%; height: 44px; padding-inline: 12px !important; }
+.app-sidebar .ant-menu-item-selected { background: linear-gradient(100deg, #126a9f, #0c4266); box-shadow: inset 3px 0 #62d3ff; }
+.sidebar-footer { display: grid; gap: 6px; margin: 18px 16px; padding-top: 16px; border-top: 1px solid #214052; color: #7494a8; font-size: 11px; }
+.sidebar-footer b { color: #b5cedf; font-size: 12px; font-weight: 500; }
+.sidebar-footer small { font-size: 10px; color: #547386; }
+.app-content { min-width: 0; height: 100%; padding: 20px; color: #dbeaf4; overflow: hidden; background: radial-gradient(ellipse at 90% 0, #102b3d 0, #061522 55%); }
+.app-content h1 { font-size: clamp(20px, 1.45vw, 26px); letter-spacing: .4px; }
+.app-content .ant-card { border-radius: 10px; }
+.app-content .ant-card-head { min-height: 44px; padding: 0 16px; font-size: 13px; }
+.app-content .ant-card-body { padding: 16px; }
+.app-content .ant-card-head-title { white-space: normal; }
+.app-content .ant-tag { margin-inline-end: 0; border-radius: 4px; }
+.app-content .ant-btn { flex-shrink: 0; }
+.app-content .ant-space { max-width: 100%; }
+.app-content .ant-statistic-content { font-variant-numeric: tabular-nums; }
+.app-content .ant-statistic-content-suffix { font-size: .65em; }
+.app-content .ant-empty { margin: auto; padding: 24px 10px; }
+.muted { color: #829fb3; font-size: 12px; }
+@media (max-height: 820px) { .app-content { padding: 14px; } .app-brand { padding-top: 18px; } }
+@media (max-width: 1100px) { .app-sidebar.ant-layout-sider { flex: 0 0 174px !important; width: 174px !important; min-width: 174px !important; max-width: 174px !important; } .app-brand { padding-inline: 12px; } .app-brand > div:nth-child(2) { font-size: 16px !important; } .app-content { padding: 12px; } }
+/* Small devices retain every control through normal page scrolling. */
+@media (max-width: 760px), (max-height: 560px) { .app-content { overflow: auto; } }
